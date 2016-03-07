@@ -3,8 +3,10 @@
 import fileinput 
 import math 
 
+# nCrを求める関数
 def comb(n, r):
   return math.factorial(n) / (math.factorial(n - r) * math.factorial(r))
+
 # メイン処理 
 for line in fileinput.input():
   line = line.replace('\n', '')
